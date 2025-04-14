@@ -50,8 +50,8 @@ You can install Fast-NR either with using pip or git repository.
 
 | parameter | type      | Description|
 | :-------- |  :--------| :----------|
-| `-t`      |  *file*     | Control file path and name, usually the STARR-seq plasmid library. Only .bam and .bed file accpected. |
-| `-c`      |  *file*     | Treatment file path and name, usually the STARR-seq cDNA library. Only .bam and 3 column or 6 column .bed file accpected. But this program will not consider the strand information. |
+| `-c`      |  *file*     | Control file path and name, usually the STARR-seq plasmid library. Only .bam and .bed file accpected. |
+| `-t`      |  *file*     | Treatment file path and name, usually the STARR-seq cDNA library. Only .bam and 3 column or 6 column .bed file accpected. But this program will not consider the strand information. |
 | `-g`      |  *file*     | Genome chromosome size file, which can download from the UCSC. File include two column, chromosome, length of chromosome. |
 | `-o`      |  *file*     | Output path and prefix name of the final result peaks. |
 
@@ -62,7 +62,7 @@ You can install Fast-NR either with using pip or git repository.
 | `-p`      |  *value*    | The cut-off of p value. Default 10<sup>-5</sup>.|
 | `-cp`     |  *string*    | The correct method of p value. Include "BH", "Bonferroni". Default "Bonferroni". |
 | `-cm`     | *string*    | The method used to calculate the curve similarity. Include 'Cosine', 'Pearson', 'Euclidean', and 'Gradiente'. Default 'Cosine'.|
-| `-ct`     | *value*    | The percent cut-off of similarity distance. From 0 to 1. Default 0.9.|
+| `-ct`     | *value*    | The percent cut-off of similarity distance. From 0 to 1. Default 0.25.|
 | `-ws`     |  *value*    | The size of window, used to find differential coverage region. Default 600 bp.|
 | `-l`      | *value*     | Extend the fragment length to this fixed bp length. Default 0.|
 | `--remove`     | *logical*   | Remove the slop or not. Set to "TRUE" if want to remove the results in slop regions. Default "FALSE".|
